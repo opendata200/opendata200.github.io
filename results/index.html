@@ -28,7 +28,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
 </head>
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
@@ -58,9 +57,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esplora<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="results/">Risultati</a></li>
-                  <li><a href="#usecases">Casi d'uso</a></li>
-                  <li><a href="http://opendata500.com/it">Approfondisci</a></li>
+                  <li><a href="#">Risultati</a></li>
+                  <li><a href="../showroom/">Casi d'uso</a></li>
+                  <li><a href="http://opendata500.com/it"  target="_new">Approfondisci</a></li>
                 </ul>
               </li>  
               <li><a href="http://www.opendata200.it/limesurvey/index.php/522493" target="_new">Partecipa</a></li>    
@@ -85,26 +84,26 @@
         </div>
     </header>
 
-    <section id="relazione_tipodati">   
+    <section id="relazioni_tipodati">   
         <div class="row">
           <hr class="light">
         </div>
 
         <div class="row">
-            <div class="col-md-3 text-center">
-                <div class="vertical-text-left">TIPOLOGIA DATI</div>
+            <div class="col-md-3 text-center hidden-xs">
+                <div class="vertical-text-left-rosa">TIPOLOGIA DATI</div>
             </div>
             <div class="col-md-6 text-center">
                   <h3><strong>Relazione fra tipologia di dati e settori aziendali</strong></h3>
                   <div id="chart_settori_tipodati"></div>
             </div>
             <div class="col-md-3 text-center">
-                <div class="vertical-text-right">SETTORI AZIENDALI</div>
+                <div class="vertical-text-right hidden-xs">SETTORI AZIENDALI</div>
             </div>
         </div>
     </section>
 
-    <section id="relazione_sorgentedati">
+    <section id="relazioni_sorgentidati">
         <div class="row">
             <hr class="light">
         </div>
@@ -122,58 +121,74 @@
         </div>
     </section>
 
-    <section class="text-center" id="risultati">
+    <section class="text-center" id="caratteeristicheaziende">
+
         <div class="row">
-            <div class="col-md-12 text-left">
-                 <div id="chart_segmenti_mercato">
-                    <h3>Segmenti di mercato</h3>
-                    <svg></svg>
+          <hr class="light">
+        </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                     <div id="chart_tipi_dati_usati">
+                       <h3 class="text-center"><strong>Quale tipologia di dati è maggiormente utilizzata?</strong></h3>
+                        <svg></svg>
+                        <p class="text-center">
+                        <small><strong>numero aziende %</strong></small>
+                        </p>                 </div>
+                </div>
+            </div>
+
+          <div class="row">
+            <hr class="light">
+          </div>
+          <div class="row">
+              <div class="col-md-12 text-center">
+                   <div id="chart_prodotti_creati">
+                      <h3><strong>Per quali prodotti sono utilizzati i dati?</strong></h3>
+                      <svg></svg>
+                      <p class="text-center">
+                      <small><strong>numero aziende %</strong></small>
+                      </p>                 </div>
+              </div>
+          </div>
+
+        <div class="row">
+            <hr class="light">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                 <div id="chart_uso_opendata">
+                    <h3><strong>Quali sono i prodotti sviluppati dalle aziende?</strong></h3>
+                     <svg></svg>
                     <p class="text-center">
                     <small><strong>numero aziende %</strong></small>
+                    </p>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                 <div id="chart_segmenti_mercato">
+                    <h3><strong>In quale segmenti di mercato operano le aziende?</strong></h3>
+                    <svg></svg>
+                    <p class="text-center small">
+                    <strong>numero aziende %</strong><br/>
+                    </p><p class="text-left" style="font-size: 8px">
+                    <strong>B2G = business to government&nbsp;&nbsp;&nbsp;B2B = business tu business&nbsp;B2C = business to customers</strong>
                     </p>
                  </div>
             </div>
         </div>
-    <div class="row">
-      <hr class="light">
-    </div>
-        <div class="row">
-            <div class="col-md-12 text-left">
-                 <div id="chart_tipi_dati_usati">
-                    <h3>Tipi di dati utilizzati</h3>
-                    <svg></svg>
-                    <p class="text-center">
-                    <small><strong>numero aziende %</strong></small>
-                    </p>                 </div>
-            </div>
-        </div>
-    <div class="row">
-      <hr class="light">
-    </div>
-        <div class="row">
-            <div class="col-md-12 text-left">
-                 <div id="chart_prodotti_creati">
-                    <h3>Prodotti creati dagli opendata</h3>
-                    <svg></svg>
-                    <p class="text-center">
-                    <small><strong>numero aziende %</strong></small>
-                    </p>                 </div>
-            </div>
-        </div>
-        <div class="row">
-      <hr class="light">
-    </div>
-        <div class="row">
-            <div class="col-md-12 text-left">
-                 <div id="chart_uso_opendata">
-                    <h3>Uso degli opendata</h3>
-                     <svg></svg>
-                    <p class="text-center">
-                    <small><strong>numero aziende %</strong></small>
-                    </p>                 </div>
-            </div>
-        </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+    Un progetto di Fondazione Bruno Kessler e TheGovLab - partner: SpazioDati, Camera di Commercio di Padova<br/>
+    <small>tutti i contenuti sono rilasciati con licenza cc-by-sa</small>.
+      </div>
+    </footer>
+
+
 
     <!-- jQuery -->
     <script src="../vendor/d3/js/d3.v3.js"></script>

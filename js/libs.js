@@ -134,7 +134,7 @@ function drawChords (matrix, mmap,destination,colorsrange) {
         .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
         .attr("dy", ".35em")
         .style("font-family", "Montserrat, helvetica, arial, sans-serif")
-        .style("font-size", mobileScreen ? "6px" : "8px" )
+        .style("font-size", mobileScreen ? "8px" : "10px" )
         .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
         .attr("transform", function(d) {
           return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"

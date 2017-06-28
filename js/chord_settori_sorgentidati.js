@@ -13,7 +13,7 @@ var mmap_settori_sorgentidati = {
   "Agricoltura e settore alimentare":{"name":"Agricoltura e settore alimentare","id":11,"data":"settore"},
   "Ricerca e consulenza":{"name":"Ricerca e consulenza","id":12,"data":"settore"},
   "Ricerca scientifica":{"name":"Ricerca scientifica","id":13,"data":"settore"},
-  "Governo e pubblica amministrazione":{"name":"Governo e pubblica amministrazione","id":14,"data":"settore"},
+  "Governo e pubblica amministrazione":{"name":"Servizi per la P.A.","id":14,"data":"settore"},
   "Tecnologia e dati":{"name":"Tecnologia e dati","id":15,"data":"settore"},
   "Software":{"name":"Software","id":16,"data":"settore"},
   "dati.gov.it":{"name":"dati.gov.it","id":17,"data":"sorgente"},

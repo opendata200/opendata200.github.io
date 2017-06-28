@@ -54,6 +54,14 @@ body {
 	color: #483D8B;
 	font-weight: bold;
 }
+
+.vertical-text-left-rosa {
+	transform: rotate(270deg);
+	transform-origin: right top 0;
+	color: #ffb2b0;
+	font-weight: bold;
+}
+
 .vertical-text-right{
 	transform: rotate(90deg);
 	transform-origin: left top 0;
