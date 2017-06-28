@@ -1,0 +1,62 @@
+body {
+  font-family: 'Montserrat', sans-serif, 'Helvetica Neue', Arial;
+}
+
+.footer {
+  bottom: 0;
+  padding-top: 5px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #fbfbfb;
+}
+
+#chart_segmenti_mercato svg {
+	min-height: 300px;
+}
+#chart_tipi_dati_usati svg {
+	min-height: 300px;
+}
+
+#chart_prodotti_creati svg {
+	min-height: 300px;
+}
+
+#chart_uso_opendata svg {
+	min-height: 300px;
+}
+
+#chart_segmenti_mercato {
+	padding: 10px;
+}
+#chart_tipi_dati_usati {
+	padding: 10px;
+}
+
+#chart_prodotti_creati {
+	padding: 10px;
+}
+
+#chart_uso_opendata {
+	padding: 10px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:15px !important; 
+    padding-bottom:0 !important;
+    height: 65px;
+}
+.navbar {min-height:70px !important;}
+
+.vertical-text-left {
+	transform: rotate(270deg);
+	transform-origin: right top 0;
+	color: #483D8B;
+	font-weight: bold;
+}
+.vertical-text-right{
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	color: #5F9EA0;
+	font-weight: bold;
+}

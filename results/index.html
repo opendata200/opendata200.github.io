@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open Data 200 Italia, Open Data 200, OD200, open data impact, italia, italy, fbk, de chiara">
+    <meta name="author" content="">
+    <title>Open Data 200 Italia</title>
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href=' <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> ' rel='stylesheet' type='text/css'>
+    <!-- Theme CSS -->
+    <link href="../css/chord.css" rel="stylesheet">
+    <link href="../css/od200.css" rel="stylesheet">
+    <link href="../vendor/nv/css/nv.d3.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse" style="height: 65px">
+            <a class="navbar-brand" href="../index.html">
+                <img alt="open data 200 Italia" src="../img/od200italy_logo.png">
+            </a>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about">Obiettivi</a></li>
+                  <li><a href="about/#approccio">Approccio</a></li>
+                  <li><a href="about/#team">Team</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esplora<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="results/">Risultati</a></li>
+                  <li><a href="#usecases">Casi d'uso</a></li>
+                  <li><a href="http://opendata500.com/it">Approfondisci</a></li>
+                </ul>
+              </li>  
+              <li><a href="http://www.opendata200.it/limesurvey/index.php/522493" target="_new">Partecipa</a></li>    
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dicono di noi<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="info.html">Articoli</a></li>
+                  <li><a href="info.html#risorse">Risorse</a></li>
+                </ul>
+              </li>
+             <li><a href="#contacts">Contatti</a></li>                  
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    <header>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Risultati</h1>
+                <p>Uno sguardo ai dati</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="relazioni_tipodati">
+    <div class="row">
+      <hr class="light">
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="vertical-text-left">SORGENTI DATI</div>
+        </div>
+        <div class="col-md-6 text-center">
+                <h3><strong>Relazione fra sorgenti dati e settori aziendali</strong></h3>
+
+            <div id="chart_settori_sorgentidati"></div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="vertical-text-right">SETTORI AZIENDALI</div>
+        </div>
+    </div>
+    <div class="row">
+      <hr class="light">
+    </div>
+    </section>
+
+    <section id="relazioni_uso">
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="vertical-text-left">TIPOLOGIA DATI</div>
+        </div>
+        <div class="col-md-6 text-center">
+                <h3><strong>Relazione fra tipologia di dati e settori aziendali</strong></h3>
+
+            <div id="chart_settori_tipodati"></div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="vertical-text-right">SETTORI AZIENDALI</div>
+        </div>
+    </div>
+    <div class="row">
+      <hr class="light">
+    </div>
+    </section>
+
+    <section class="text-center" id="risultati">
+        <div class="row">
+            <div class="col-md-12 text-left">
+                 <div id="chart_segmenti_mercato">
+                    <h3>Segmenti di mercato</h3>
+                    <svg></svg>
+                    <p class="text-center">
+                    <small><strong>numero aziende %</strong></small>
+                    </p>
+                 </div>
+            </div>
+        </div>
+    <div class="row">
+      <hr class="light">
+    </div>
+        <div class="row">
+            <div class="col-md-12 text-left">
+                 <div id="chart_tipi_dati_usati">
+                    <h3>Tipi di dati utilizzati</h3>
+                    <svg></svg>
+                    <p class="text-center">
+                    <small><strong>numero aziende %</strong></small>
+                    </p>                 </div>
+            </div>
+        </div>
+    <div class="row">
+      <hr class="light">
+    </div>
+        <div class="row">
+            <div class="col-md-12 text-left">
+                 <div id="chart_prodotti_creati">
+                    <h3>Prodotti creati dagli opendata</h3>
+                    <svg></svg>
+                    <p class="text-center">
+                    <small><strong>numero aziende %</strong></small>
+                    </p>                 </div>
+            </div>
+        </div>
+        <div class="row">
+      <hr class="light">
+    </div>
+        <div class="row">
+            <div class="col-md-12 text-left">
+                 <div id="chart_uso_opendata">
+                    <h3>Uso degli opendata</h3>
+                     <svg></svg>
+                    <p class="text-center">
+                    <small><strong>numero aziende %</strong></small>
+                    </p>                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="../vendor/d3/js/d3.v3.js"></script>
+    <script src="../vendor/nv/js/nv.d3.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- grafici -->
+    <script src="../js/queue.js"></script>
+    <script src="../js/underscore.js"></script>
+    <script src="../js/mapper.js"></script>
+    <script src="../js/d3/d3.layout.chord.sort.js"></script>
+    <script src="../js/libs.js"></script>
+    <script src="../js/chord_settori_sorgentidati.js"></script>
+    <script src="../js/chord_tipodati_settori.js"></script>
+    <script src="../js/drawgraphs.js"></script>
+</body>
+
+</html>
