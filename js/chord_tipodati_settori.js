@@ -1,3 +1,4 @@
+
 var mmap_settori_tipodati = {
   "Energia":{"name":"Energia","id":0,"data":"settore"},
   "Ambiente e Clima":{"name":"Ambiente e clima","id":1,"data":"settore"},

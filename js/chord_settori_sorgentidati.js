@@ -92,3 +92,21 @@ colorsrange_settori_sorgentidati = [
           ];
 
 drawChords(matrix_settori_sorgentidati,mmap_settori_sorgentidati,"#chart_settori_sorgentidati",colorsrange_settori_sorgentidati);
+/*
+drawChordsSorgentidati = true;
+//$('#relazioni_sorgentidati').hide();
+//drawChords(matrix_settori_sorgentidati,mmap_settori_sorgentidati,"#chart_settori_sorgentidati",colorsrange_settori_sorgentidati);
+
+
+var waypoints_sorgentidati = $('#relazioni_sorgentidati').waypoint(function(direction) {
+     if (drawChordsSorgentidati) {
+            $('#relazioni_sorgentidati').fadeIn();
+            drawChords(matrix_settori_sorgentidati,mmap_settori_sorgentidati,"#chart_settori_sorgentidati",colorsrange_settori_sorgentidati);
+              drawChordsSorgentidati = false;
+      }
+}, {
+  offset: '5%'
+})
+
+
+*/

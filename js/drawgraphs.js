@@ -1,4 +1,18 @@
-disegnaGrafici();
+drawGraphs = true;
+
+ new Waypoint({
+    offset: '100%',
+    element: document.getElementById('caratteeristicheaziende'),
+    handler: function() {
+        if (drawGraphs) {
+         disegnaGrafici();
+          drawGraphs = false;
+        }
+    }
+  });
+
+
+
 
 function disegnaGrafici() {
     nv.addGraph(function() {
