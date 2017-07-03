@@ -5,7 +5,7 @@ function drawChords (matrix, mmap,destination,colorsrange) {
     var margin = {left: 50, top: 10, right: 50, bottom: 10},
     width = Math.min(screenWidth, 768) - margin.left - margin.right,
     height = (mobileScreen ? 300 : Math.min(screenWidth, 768)*5/6) - margin.top - margin.bottom;
-    var w = width, h = height, r1 = h / 2, r0 = r1 - 80;
+    var w = width, h = height, r1 = h / 2, r0 = r1 - 110;
 
     var fill = d3.scale.ordinal()
         .domain(d3.range(2))
@@ -31,8 +31,7 @@ function drawChords (matrix, mmap,destination,colorsrange) {
     var wrapper = svg.append("g").attr("class", "chordWrapper")
         .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");;
         
-#    var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 80 : 100),
-    var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 50 : 70),
+    var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 80 : 100),
         innerRadius = outerRadius * 0.95,
         opacityDefault = 0.7, //default opacity of chords
         opacityLow = 0.02; //hover opacity of those chords not hovered over
